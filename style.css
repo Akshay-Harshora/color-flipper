@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto :400, 700&display=swap");
+:root
+{
+--clr-white:#fff;
+--clr-black:#222;
+--clr-grey-1:hsl(209,61%,16%);
+--clr-grey-10:hsl(210,36%,96%);
+--ff-secondary:"Open Sans";
+--clr-primary-5:hsl(205,78%,60%);
+--spacing:0.1rem`;
+--transition:all 0.3s linear;
+--radius:0.25rem;
+--ff-primary:"Roboto",sans-serif;
+
+
+}
+body{
+    margin:0;
+    padding:0;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.container
+{
+    
+    place-items: center;
+    display: grid;
+}
+.container h2{
+background: var(--clr-black);
+color:var(--clr-white);
+padding:1rem;
+border-radius: var(--radius);
+margin-bottom: 2.5rem;
+
+}
+body{
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color:var(--clr-grey-1);
+    font-size:0.875em;
+    line-height: 1.5;
+}
+.color
+{
+    color:var(--clr-primary-5);
+}
+#btn
+{
+    font-family:var(--ff-primary);
+    color:var(--clr-black);
+    font-weight:700;
+    border-radius: var(--radius);
+    border:2px solid var(--clr-black);
+    text-transform: uppercase;
+    font-size:1rem;
+    padding:0.75rem 1.25rem;
+    cursor: pointer;
+    background:transparent;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+    display:inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+}
+#btn:hover
+{
+    color:var(--clr-white);
+    background: var(--clr-black);
+}
